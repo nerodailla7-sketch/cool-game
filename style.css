@@ -1,0 +1,136 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #b68686;
+    text-align: center;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+h2 {
+  background-color: rgb(150, 105, 105);
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.card {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.03);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card img {
+  width: 100%;
+}
+.rpg-stats {
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+.progress-bar {
+  background: #444;
+  height: 20px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.fill {
+  height: 100%;
+
+}
+.creative {
+  width: 80%;
+  background: purple;
+
+}
+.logic {
+  width: 70%;
+  background: red;
+
+}
+.write {
+   width: 100%;
+  background: darkgoldenrod;
+}
+.read {
+   width: 100%;
+  background: navy;
+}
+.count {
+   width: 100%;
+  background: aquamarine;
+}
+.skills-list{
+  list-style: none;
+  padding: 0;
+}
+.skills-list li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.skills-list img{
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+@keyframes fillUp {
+  0% { 
+    width: 0%; 
+  }
+}
+.creative{
+  width: 80%;
+  background: purple;
+  animation: fillUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+.logic{
+  width: 70%;
+  background: red;
+  animation: fillUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+.read{
+  width: 100%;
+  background: navy;
+  animation: fillUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+.write{
+  width: 100%;
+  background: darkgoldenrod;
+  animation: fillUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+.count{
+  width: 100%;
+  background: aquamarine;
+  animation: fillUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
